@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: sans-serif;
+}
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: cadetblue;
+    position: absolute;
+    z-index: 2;
+    animation-name: loding;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+}
+
+@keyframes loding{
+    0%{
+        opacity: 1;
+        z-index: 2;
+    }
+    25%{
+        opacity: 1;
+        z-index: 2;
+    }
+    50%{
+        opacity: 1;
+        z-index: 2;
+    }
+    75%{
+        opacity: 1;
+        z-index: 2;
+    }
+    100%{
+        opacity: 0;
+        z-index: 0;
+    }
+}
+.zagruzka{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 1px solid ; */
+    position: relative;
+    animation-name: zagruzka;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+    animation-direction: normal;
+    animation-timing-function: ease;
+}
+
+
+@keyframes zagruzka{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ .element1{
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     /* border: 1px solid; */
+     border-radius: 50%;
+     top: -30px;
+     left: 40%;
+     background: yellow;
+ }
+
+ .element2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    top: 55px;
+    left: 100%;
+    background-color: aqua;
+}
+.element3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    top: 150px;
+    left: 45%;
+    background: pink;
+}
+.element4{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    top: 55px;
+    left: -20%;
+    background: greenyellow;
+}
+/* ---------------------------------------------------------- */
+.conteiner{
+    height: 100vh;
+    width: 100%;
+    background: red;
+    position: absolute;
+    z-index: 1;
+}
