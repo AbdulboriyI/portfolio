@@ -154,6 +154,7 @@ nav{
     align-items: center;
     position: fixed;
     top: 0;
+    background: white;
 }
 
 nav .text{
@@ -190,4 +191,49 @@ nav .menu{
 }
 .menu li:hover a{
     border: 1px solid black;
+}
+/* ------------------------------------------------ */
+/* HomePage */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0px, 150px);
+    position: relative;
+}
+.home img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.home .text{
+    width: 700px;
+    height: 300px;
+    /* border: 1px solid white; */
+    position: absolute;
+    z-index: 2;
+    transform: translate(-300px, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home .text h1{
+    font-size: 45px;
+    color: white;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.home .text a{
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
 }
