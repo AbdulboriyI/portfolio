@@ -7,6 +7,32 @@
 body{
     position: relative;
     font-family: sans-serif;
+    animation-name: body;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes body{
+    0%{
+        overflow: hidden;
+        
+    }
+    25%{
+        overflow: hidden;
+        
+    }
+    50%{
+        overflow: hidden;
+        
+    }
+    75%{
+        overflow: hidden;
+        
+    }
+    100%{
+        overflow: visible;
+        
+    }
 }
 
 .loading{
@@ -110,9 +136,58 @@ body{
 }
 /* ---------------------------------------------------------- */
 .conteiner{
-    height: 100vh;
+    height: 150vh;
     width: 100%;
-    background: blue;
+    background: white;
     position: absolute;
     z-index: 1;
+}
+/* ----------------------------------------------------------------- */
+/* navbar */
+nav{
+    width: 100%;
+    height: auto;
+    padding: 20px 150px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+nav .text{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .text .logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    /* border: 1px solid; */
+}
+nav .menu{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    margin: 0 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+.menu li:hover a{
+    border: 1px solid black;
 }
