@@ -340,7 +340,7 @@ nav .menu{
     background: rgb(6, 6, 70);
 }
 .works .card img{
-    width: 100%;
+    width: 130%;
     height: 100%;
     position: absolute;
     transition: 0.5s;
@@ -351,9 +351,7 @@ nav .menu{
     position: absolute;
     transition: 0.5s;
 }
-.works .card img{
-    
-}
+
 .works .card .text{
     background-color: rgba(0, 0, 255, 0.447);
     bottom: -250px;
